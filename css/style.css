@@ -393,7 +393,7 @@ input::placeholder {
 
 @media only screen and (max-width: 451px) {
   .bg-img-1 {
-    background-image: url(../img/background/pag1mov.png) !important;
+    background-image: url(../img/background/pag1mov.jpg) !important;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -412,7 +412,7 @@ input::placeholder {
     }
     
     .bg-img-2 {
-    background-image: url(../img/background/pag2mov.png) !important;
+    background-image: url(../img/background/pag2mov.jpg) !important;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -434,7 +434,7 @@ input::placeholder {
     }
     
     .bg-img-3 {
-    background-image: url(../img/background/pag3mov.png) !important;
+    background-image: url(../img/background/pag3mov.jpg) !important;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -456,7 +456,7 @@ input::placeholder {
     }
     
     .bg-img-4 {
-    background-image: url(../img/background/pag4mov.png) !important;
+    background-image: url(../img/background/pag4mov.jpg) !important;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -624,7 +624,7 @@ input::placeholder {
     }
     
     .bg-img-5 {
-    background-image: url(../img/background/pag5mov.png)!important;
+    background-image: url(../img/background/pag5mov.jpg)!important;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh; /* Ocupa toda la altura de la pantalla */
@@ -676,7 +676,7 @@ input::placeholder {
 
 @media only screen and (min-width: 452px) and (max-width: 1024px) {
   .bg-img-1 {
-    background-image: url(../img/background/pag1tabv.png) !important;
+    background-image: url(../img/background/pag1tabv.jpg) !important;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -695,7 +695,7 @@ input::placeholder {
   }
     
     .bg-img-2 {
-    background-image: url(../img/background/pag2tabv.png) !important;
+    background-image: url(../img/background/pag2tabv.jpg) !important;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -717,7 +717,7 @@ input::placeholder {
     }
     
     .bg-img-3 {
-    background-image: url(../img/background/pag3tabv.png) !important;
+    background-image: url(../img/background/pag3tabv.jpg) !important;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -739,7 +739,7 @@ input::placeholder {
     }
     
     .bg-img-4 {
-    background-image: url(../img/background/pag4tabv.png) !important;
+    background-image: url(../img/background/pag4tabv.jpg) !important;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -853,31 +853,33 @@ input::placeholder {
       align-items: center;
       .descripcion{
         width: 42%;
-        padding-left: 10px;
+        padding-left: 30px;
         height: fit-content;
         strong,p{
-          font-size: 18px;
-          line-height: 2px;
+          font-size: 24px;
+          line-height: 40px;
         }
         hr {
-          width: 90%; 
+          width: 90%;
+          padding: 20px 0px; 
         }
       }
       .precio{
-        padding-top: 20px;
+        padding-top: 30px;
         float: none;
         strong,p{
-          font-size: 16px !important;
-          line-height: 0px;
+          font-size: 24px !important;
+          line-height: 40px;
           margin-right: 0px;
         }
       }
       .scroll-indicator {
-        font-size: 14px;
+        font-size: 25px;
         color: #cccccc;
         margin-top: 10px;
         text-align: center;
         display: block;
+        padding: 20px 0px; 
       }    
       .plano{
         margin-left: 20px;
@@ -901,7 +903,7 @@ input::placeholder {
     }
     
     .bg-img-5 {
-    background-image: url(../img/background/pag5tab.png)!important;
+    background-image: url(../img/background/pag5tabv.jpg)!important;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh; /* Ocupa toda la altura de la pantalla */
@@ -919,32 +921,36 @@ input::placeholder {
     .texto7, .texto8{
       display: none;
     }
+    form{
+      width: 60%;
+    }
     .form-group{
       width: 100%;
       font-size: 25px;
       background-color: #cccccc;
       input::placeholder {
-        font-size: 18px !important;
+        font-size: 25px !important;
       }
       label{
         width: 75%;
-        font-size: 18px !important;
+        font-size: 25px !important;
         line-height: 25px;
         padding-top: 4%;
       }
       select{
-        font-size: 18px !important;
+        font-size: 25px !important;
         -webkit-appearance: menulist-button;
         appearance: menulist-button;
       }
       input{
-        font-size: 18px !important;
+        font-size: 25px !important;
       }
     }
     .submit-btn{
-      margin: 20px 0px 0px 100px; 
+      float: right;
       width: auto; 
       border: none;
+      font-size: 25px !important;
     }
     }
 }
@@ -1015,23 +1021,23 @@ input::placeholder {
 /* 1. TEMPLATE BACKGROUNDS */
 /* 1.1. hero slider IMG BACKGROUND */
 .bg-img-1 {
-background-image: url(../img/background/pag1.png);
+background-image: url(../img/background/pag1.jpg);
 }
 
 .bg-img-2 {
-background-image: url(../img/background/pag2.png);
+background-image: url(../img/background/pag2.jpg);
 }
 
 .bg-img-3 {
-background-image: url(../img/background/pag3.png);
+background-image: url(../img/background/pag3.jpg);
 }
 
 .bg-img-4 {
-background-image: url(../img/background/pag4.png);
+background-image: url(../img/background/pag4.jpg);
 }
 
 .bg-img-5 {
-background-image: url(../img/background/pag5.png);
+background-image: url(../img/background/pag5.jpg);
 }
 
 .bg-img-6 {
