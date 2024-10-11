@@ -2,21 +2,21 @@
   font-family: 'futura';
   font-style: normal;
   font-weight: 100;
-  src: url('https://soporte.greenfieldteam.net/Fonts/light.ttf') format('truetype'),
+  src: url('fonts/light.ttf') format('truetype'),
 }
 
 @font-face {
   font-family: 'futura2';
   font-style: normal;
   font-weight: 700;
-  src: url('https://soporte.greenfieldteam.net/Fonts/heavy.ttf') format('truetype'),
+  src: url('fonts/heavy.ttf') format('truetype'),
 }
 
 @font-face {
   font-family: 'futura3';
   font-style: normal;
   font-weight: 900;
-  src: url('https://soporte.greenfieldteam.net/Fonts/black.ttf') format('truetype'),
+  src: url('fonts/black.ttf') format('truetype'),
 }
 
 .textopg2{
