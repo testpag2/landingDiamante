@@ -260,7 +260,7 @@
 .precio{
   font-family: 'Futura', sans-serif;
   float: left;
-  padding-top: 80px;
+  padding-top: 25px;
   p, strong{
     font-size: 30px !important;
     line-height: 55px;
@@ -391,10 +391,18 @@ input::placeholder {
     background-image: url(../img/background/pag1mov.png) !important;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: flex-end; /* Alinea el contenido al fondo de la pantalla */
+    min-height: 100vh;
     .btn-agendar{
-      top: 800px;
-      left: 60px;
       font-size: 20px !important;
+      margin: 0 40px; /* Espacio lateral */
+      padding: 15px 30px; /* Ajuste de tamaño del botón si lo necesitas */
+      position: relative;
+      bottom: 70px;
+      top: auto;
+      left: auto;
     }
     }
     
@@ -402,14 +410,21 @@ input::placeholder {
     background-image: url(../img/background/pag2mov.png) !important;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: flex-end; /* Alinea el contenido al fondo de la pantalla */
+    min-height: 100vh;
     .textopg2{
       display: none;
     }
     .btn-sabermas{
-      top: 800px;
-      left: 75px;
       font-size: 20px !important;
-      padding: 15px 90px;
+      margin: 0 40px; /* Espacio lateral */
+      padding: 10px 40px; /* Ajuste de tamaño del botón si lo necesitas */
+      position: relative;
+      bottom: 70px;
+      top: auto;
+      left: auto;
     }
     }
     
@@ -417,13 +432,21 @@ input::placeholder {
     background-image: url(../img/background/pag3mov.png) !important;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: flex-end; /* Alinea el contenido al fondo de la pantalla */
+    min-height: 100vh;
     .textopg3{
       display: none;
     }
     .btn-ubicacion{
-      top: 800px;
-      right: 75px;
       font-size: 20px !important;
+      margin: 0 40px; /* Espacio lateral */
+      padding: 10px 40px; /* Ajuste de tamaño del botón si lo necesitas */
+      position: relative;
+      bottom: 70px;
+      top: auto;
+      right: auto;
     }
     }
     
@@ -431,41 +454,59 @@ input::placeholder {
     background-image: url(../img/background/pag4mov.png) !important;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Alinea el contenido al centro verticalmente */
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
     .contenedor{
-      padding-left: 0px;
+     /* padding-left: 0px;*/
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
     }
     .contenido{
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
     }
     .titulo{
       display: none;
     }
     .btn-brochure-mov{
       display: block;
-      position: fixed;
-      bottom: 370px;
-      left: 130px;
-      font-family: 'Futura' !important;
-      font-size: 20px !important;
-      background-color: #D8DB3E;
-      color: #000 !important;
-      border-radius: 40px;
-      padding: 5px 30px;
+    position: relative;
+    bottom: auto; /* Elimina la posición fija */
+    font-family: 'Futura' !important;
+    font-size: 20px !important;
+    background-color: #D8DB3E;
+    color: #000 !important;
+    border-radius: 40px;
+    padding: 5px 30px;
+    margin-top: 20px;
     }
     .roi2{
       width: 95%;
       font-size: 16px;
-      bottom: 15px;
+      text-align: center;
+      margin-top: 10px;      
     }
     .btn-bodega{
-      font-size: 24px !important;
+      font-size: 18px !important;
     }
     .botones {
       display: grid;
       grid-template-columns: 1fr 1fr; 
-      gap: 20px; 
-      width: 100%;
-      padding: 200px 50px;
+      gap: 10px; /* Espacio entre los botones */
+      width: 85%;
+      padding: 0;
+      text-align: center;
       .active{
         background-color: #D8DB3E;
         color: #000 !important;
@@ -475,7 +516,7 @@ input::placeholder {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 10px;
+      padding: 10px 0px 10px 0px;
       background-color: #f0f0f0;
       border-radius: 5px;
       text-align: center;
