@@ -384,6 +384,10 @@ input::placeholder {
   display: none;
 }
 
+.scroll-indicator{
+  display: none;
+}
+
 /* moviles */
 
 @media only screen and (max-width: 451px) {
