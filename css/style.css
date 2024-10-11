@@ -461,12 +461,13 @@ input::placeholder {
     min-height: 100vh;
     padding: 20px;
     .contenedor{
-     /* padding-left: 0px;*/
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       width: 100%;
+      padding-top: 0px;
+      padding-left: 0px;
     }
     .contenido{
       width: 100%;
@@ -556,12 +557,16 @@ input::placeholder {
     }
 
     #popup-info{
+      display: flex; /* Alinea la descripción y el plano lado a lado */
+      flex-direction: row;
+      overflow-x: auto; /* Permite el scroll horizontal */
+      width: 220%;
       .descripcion{
-        width: 98%;
+        width: 70%;
         padding-left: 10px;
         height: fit-content;
         strong,p{
-          font-size: 17px;
+          font-size: 18px;
           line-height: 2px;
         }
         hr {
@@ -570,19 +575,29 @@ input::placeholder {
       }
       .precio{
         padding-top: 20px;
+        float: none;
         strong,p{
           font-size: 16px !important;
           line-height: 0px;
+          margin-right: 0px;
         }
       }
-      .plano{
-        display: block;
+      .scroll-indicator {
+        font-size: 14px;
+        color: #cccccc;
+        margin-top: 10px;
         text-align: center;
+        display: block;
+      }    
+      .plano{
+        
+        width: 100%; /* Hacemos que la imagen ocupe el resto del espacio */
+        min-width: 400px; /* Fijamos un ancho mínimo para que sea más grande y obligue al scroll */
+        margin-left: 20px;
+        display: flex !important;
         img{
-          height: 440px;
           width: auto;
-          text-align: center;
-          float: none;
+          height: 92vh;
         }
       }
     }
@@ -602,8 +617,17 @@ input::placeholder {
     background-image: url(../img/background/pag5mov.png)!important;
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
     .contacto{
-      margin: 310px 50px
+      margin: 110px 0px 0px 0px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     .texto7, .texto8{
       display: none;
@@ -613,14 +637,24 @@ input::placeholder {
       font-size: 25px;
       background-color: #cccccc;
       input::placeholder {
-        font-size: 25px;
+        font-size: 18px !important;
       }
       label{
         width: 75%;
+        font-size: 18px !important;
+        line-height: 25px;
+      }
+      select{
+        font-size: 18px !important;
+      }
+      input{
+        font-size: 18px !important;
       }
     }
     .submit-btn{
-      margin-left: 33%;
+      margin: 20px 0px 0px 100px; /* Elimina el margen izquierdo y ajusta el margen superior */
+      width: auto; /* Ajusta el ancho del botón al contenido */
+      align-self: center;
     }
     }
 }
