@@ -400,7 +400,7 @@ input::placeholder {
       margin: 0 40px; /* Espacio lateral */
       padding: 15px 30px; /* Ajuste de tamaño del botón si lo necesitas */
       position: relative;
-      bottom: 70px;
+      bottom: 170px;
       top: auto;
       left: auto;
     }
@@ -422,7 +422,7 @@ input::placeholder {
       margin: 0 40px; /* Espacio lateral */
       padding: 10px 40px; /* Ajuste de tamaño del botón si lo necesitas */
       position: relative;
-      bottom: 70px;
+      bottom: 170px;
       top: auto;
       left: auto;
     }
@@ -444,7 +444,7 @@ input::placeholder {
       margin: 0 40px; /* Espacio lateral */
       padding: 10px 40px; /* Ajuste de tamaño del botón si lo necesitas */
       position: relative;
-      bottom: 70px;
+      bottom: 170px;
       top: auto;
       right: auto;
     }
