@@ -119,17 +119,9 @@ $(function() {
 	
 	$(document).ready(function() {
         $("#agendarbtn").on("click", function() {        
-            swiper.slideTo(4);
+            swiper.slideTo(5);
         });
     });
-
-    $(document).ready(function() {
-        $("#sabermasbtn").on("click", function() {            
-            swiper.slideTo(3); 
-        });
-    });
-
-
     
 });
 
