@@ -25,7 +25,7 @@ $(function() {
     function checkScreenWidth() {
         const infoDiv = document.querySelector('.infoA');
         const infoBtn = document.querySelector('.btn-bodega');
-        if (window.innerWidth < 451) {
+        if (window.innerWidth < 1400) {
             infoDiv.classList.remove('activeinfo');
             infoBtn.classList.remove('active');
         } else {
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const modelo = this.textContent.trim();
             const selectedInfo = infos[modelo];
 
-            if (window.innerWidth < 451) {
+            if (window.innerWidth < 1400) {
                 openPopup(selectedInfo);
             } else {
                 // Comportamiento original para pantallas grandes

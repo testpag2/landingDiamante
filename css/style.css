@@ -389,7 +389,7 @@ input::placeholder {
   display: none;
 }
 
-/* moviles */
+/******************************************** moviles *****************************************************************/
 
 @media only screen and (max-width: 451px) {
   .bg-img-1 {
@@ -573,8 +573,14 @@ input::placeholder {
         padding-left: 10px;
         height: fit-content;
         strong,p{
+          line-height: 2px !important;
+          margin-right: 0px !important;
+        }
+        strong{
+          font-size: 16px;
+        }
+        p{
           font-size: 18px;
-          line-height: 2px;
         }
         hr {
           width: 90%; 
@@ -666,9 +672,11 @@ input::placeholder {
     }
 }
 
+/******************************************** tablets vertical *****************************************************************/
+
 @media only screen and (min-width: 452px) and (max-width: 1024px) {
   .bg-img-1 {
-    background-image: url(../img/background/pag1mov.png) !important;
+    background-image: url(../img/background/pag1tabv.png) !important;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -676,7 +684,7 @@ input::placeholder {
     align-items: flex-end; /* Alinea el contenido al fondo de la pantalla */
     min-height: 100vh;
     .btn-agendar{
-      font-size: 20px !important;
+      font-size: 30px !important;
       margin: 0 40px; /* Espacio lateral */
       padding: 15px 30px; /* Ajuste de tamaño del botón si lo necesitas */
       position: relative;
@@ -687,7 +695,7 @@ input::placeholder {
   }
     
     .bg-img-2 {
-    background-image: url(../img/background/pag2mov.png) !important;
+    background-image: url(../img/background/pag2tabv.png) !important;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -698,7 +706,7 @@ input::placeholder {
       display: none;
     }
     .btn-sabermas{
-      font-size: 20px !important;
+      font-size: 30px !important;
       margin: 0 40px; /* Espacio lateral */
       padding: 10px 40px; /* Ajuste de tamaño del botón si lo necesitas */
       position: relative;
@@ -709,7 +717,7 @@ input::placeholder {
     }
     
     .bg-img-3 {
-    background-image: url(../img/background/pag3mov.png) !important;
+    background-image: url(../img/background/pag3tabv.png) !important;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -731,7 +739,7 @@ input::placeholder {
     }
     
     .bg-img-4 {
-    background-image: url(../img/background/pag4mov.png) !important;
+    background-image: url(../img/background/pag4tabv.png) !important;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -893,7 +901,7 @@ input::placeholder {
     }
     
     .bg-img-5 {
-    background-image: url(../img/background/pag5mov.png)!important;
+    background-image: url(../img/background/pag5tab.png)!important;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh; /* Ocupa toda la altura de la pantalla */
