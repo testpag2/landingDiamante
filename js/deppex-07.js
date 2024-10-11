@@ -65,7 +65,7 @@ $(function() {
             disableOnInteraction: false
         },*/
         init: true,
-        loop: false,
+        loop: true,
         speed: 1200,
         grabCursor: false,
         mousewheel: true,

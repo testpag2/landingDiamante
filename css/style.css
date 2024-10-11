@@ -498,7 +498,7 @@ input::placeholder {
     }
     .roi2{
       width: 95%;
-      bottom: 50px;
+      bottom: 10%;
       font-size: 16px;
       text-align: center;
       margin-top: 10px;      
@@ -566,8 +566,9 @@ input::placeholder {
       flex-direction: row;
       overflow-x: auto; /* Permite el scroll horizontal */
       width: 220%;
+      align-items: center;
       .descripcion{
-        width: 70%;
+        width: 42%;
         padding-left: 10px;
         height: fit-content;
         strong,p{
@@ -595,9 +596,6 @@ input::placeholder {
         display: block;
       }    
       .plano{
-        
-        width: 100%; /* Hacemos que la imagen ocupe el resto del espacio */
-        min-width: 400px; /* Fijamos un ancho mínimo para que sea más grande y obligue al scroll */
         margin-left: 20px;
         display: flex !important;
         img{
@@ -648,18 +646,21 @@ input::placeholder {
         width: 75%;
         font-size: 18px !important;
         line-height: 25px;
+        padding-top: 4%;
       }
       select{
         font-size: 18px !important;
+        -webkit-appearance: menulist-button;
+        appearance: menulist-button;
       }
       input{
         font-size: 18px !important;
       }
     }
     .submit-btn{
-      margin: 20px 0px 0px 100px; /* Elimina el margen izquierdo y ajusta el margen superior */
-      width: auto; /* Ajusta el ancho del botón al contenido */
-      align-self: center;
+      margin: 20px 0px 0px 100px; 
+      width: auto; 
+      border: none;
     }
     }
 }
