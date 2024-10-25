@@ -122,6 +122,99 @@ $(function() {
             swiper.slideTo(5);
         });
     });
+
+    /***************** brochure ***************************************/
+    $(document).on("click", ".btn-brochure", function(event) {
+        openPopupForm();
+    });
+
+    $(document).on("click", ".btn-brochure-mov", function(event) {
+        openPopupForm();
+    });
+
+    $(document).on("click", ".btn-sabermas", function(event) {
+        openPopupForm2();
+    });
+
+    $('#open-map-popup').on('click', function(event) {
+        $('#map-popup').removeClass('hidden'); 
+    });
+
+    $('#close-map-popup').on('click', function() {
+        $('#map-popup').addClass('hidden'); // Oculta el popup
+    });
+
+    // Función para abrir el popup
+    function openPopupForm() {
+        $("#popup-form-brochure").removeClass("hidden");
+    }
+
+    // Función para cerrar el popup
+    $("#close-popup-form").on("click", function() {
+        $("#popup-form-brochure").addClass("hidden");
+    });
+
+    // Cerrar el popup si se hace clic fuera del contenido
+    $("#popup-form-brochure").on("click", function(e) {
+        if (e.target === this) {
+            $(this).addClass("hidden");
+        }
+    });
+
+    // Procesar el formulario y descargar el archivo
+    $("#brochure-form").on("submit", function(event) {
+        $("#popup-form-brochure").addClass("hidden");  
+        setTimeout(function() {
+            downloadBrochure();
+        }, 2000);
+    });
+
+    // Función para descargar el brochure
+    function downloadBrochure() {
+        const link = document.createElement("a");
+        link.href = "docs/brochure-complejo-diamante-inversionista.pdf";
+        link.download = "brochure.pdf";
+        link.target= "_blank"
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
+      // Función para abrir el popup
+      function openPopupForm2() {
+        $("#popup-form-brochure2").removeClass("hidden");
+    }
+
+    // Función para cerrar el popup
+    $("#close-popup-form2").on("click", function() {
+        $("#popup-form-brochure2").addClass("hidden");
+    });
+
+    // Cerrar el popup si se hace clic fuera del contenido
+    $("#popup-form-brochure2").on("click", function(e) {
+        if (e.target === this) {
+            $(this).addClass("hidden");
+        }
+    });
+
+    // Procesar el formulario y descargar el archivo
+    $("#brochure-form2").on("submit", function(event) {
+        $("#popup-form-brochure2").addClass("hidden");  
+        setTimeout(function() {
+            downloadBrochure2();
+        }, 2000);
+    });
+
+    // Función para descargar el brochure
+    function downloadBrochure2() {
+        const link = document.createElement("a");
+        link.href = "docs/mini-brochure-inv.pdf";
+        link.download = "mini-brochure.pdf";
+        link.target= "_blank"
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
     
 });
 
@@ -181,4 +274,7 @@ document.addEventListener('DOMContentLoaded', function () {
             closePopup();
         }
     });
+
+
+    
 });
