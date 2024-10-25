@@ -472,6 +472,24 @@ input::placeholder {
     color: white;
 }
 
+#close-x-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+    background-color: rgb(0, 0, 0, 0);
+    color: white;
+}
+
+#close-x-popup2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+    background-color: rgb(0, 0, 0, 0);
+    color: white;
+}
+
 /******************************************** moviles *****************************************************************/
 
 @media only screen and (max-width: 451px) and (orientation: portrait) {

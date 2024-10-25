@@ -144,6 +144,14 @@ $(function() {
         $('#map-popup').addClass('hidden'); // Oculta el popup
     });
 
+    $('#close-x-popup').on('click', function() {
+        $('#popup-form-brochure').addClass('hidden'); // Oculta el popup
+    });
+
+    $('#close-x-popup2').on('click', function() {
+        $('#popup-form-brochure2').addClass('hidden'); // Oculta el popup
+    });
+
     // Función para abrir el popup
     function openPopupForm() {
         $("#popup-form-brochure").removeClass("hidden");
@@ -209,7 +217,7 @@ $(function() {
     function downloadBrochure2() {
         const link = document.createElement("a");
         link.href = "docs/mini-brochure-inv.pdf";
-        link.download = "mini-brochure.pdf";
+        link.download = "mini-sbrochure.pdf";
         link.target= "_blank"
         document.body.appendChild(link);
         link.click();
